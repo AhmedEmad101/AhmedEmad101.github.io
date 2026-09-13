@@ -14,325 +14,414 @@
             --border-color: #334155;
         }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+       * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    }
 
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.6;
-            padding: 20px;
-        }
+    body {
+        background-color: var(--bg-color);
+        color: var(--text-main);
+        line-height: 1.6;
+        padding: 30px 15px;
+    }
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
 
-        header {
-            text-align: center;
-            padding: 40px 0 20px 0;
-            border-bottom: 1px solid var(--border-color);
-        }
+    header {
+        text-align: center;
+        padding: 30px 0 25px 0;
+        border-bottom: 1px solid var(--border-color);
+    }
 
-        h1 {
-            font-size: 2.5rem;
-            color: var(--text-main);
-            margin-bottom: 5px;
-        }
+    h1 {
+        font-size: 2.6rem;
+        color: var(--text-main);
+        letter-spacing: -0.5px;
+        margin-bottom: 5px;
+    }
 
-        h2.title {
-            font-size: 1.2rem;
-            color: var(--accent-color);
-            font-weight: 400;
-            margin-bottom: 15px;
-        }
+    h2.title {
+        font-size: 1.25rem;
+        color: var(--accent-color);
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
 
-        .contact-links {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-            margin-top: 10px;
-        }
+    .contact-links {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        flex-wrap: wrap;
+        font-size: 0.95rem;
+    }
 
-        .contact-links a {
-            color: var(--text-muted);
-            text-decoration: none;
-            transition: color 0.2s;
-        }
+    .contact-links span, .contact-links a {
+        color: var(--text-muted);
+        text-decoration: none;
+        transition: color 0.2s;
+    }
 
-        .contact-links a:hover {
-            color: var(--accent-color);
-        }
+    .contact-links a:hover {
+        color: var(--accent-color);
+    }
 
-        section {
-            margin: 30px 0;
-        }
+    section {
+        margin: 35px 0;
+    }
 
-        .section-title {
-            font-size: 1.5rem;
-            color: var(--accent-color);
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 5px;
-            margin-bottom: 20px;
-        }
+    .section-title {
+        font-size: 1.4rem;
+        color: var(--accent-color);
+        border-bottom: 2px solid var(--border-color);
+        padding-bottom: 6px;
+        margin-bottom: 22px;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+    }
 
-        .summary {
-            color: var(--text-muted);
-            font-size: 1.05rem;
-        }
+    .summary {
+        color: var(--text-muted);
+        font-size: 1.05rem;
+        line-height: 1.7;
+    }
 
-        .card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
+    .card {
+        background-color: var(--card-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 22px;
+        margin-bottom: 22px;
+    }
 
-        .card-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            flex-wrap: wrap;
-            margin-bottom: 10px;
-        }
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 12px;
+    }
 
-        .role {
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
+    .role {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
 
-        .company {
-            color: var(--accent-color);
-        }
+    .company {
+        color: var(--accent-color);
+    }
 
-        .date-location {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-        }
+    .date-location {
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        font-weight: 500;
+    }
 
-        ul {
-            list-style-type: square;
-            margin-left: 20px;
-            color: var(--text-muted);
-        }
+    .intro-text {
+        color: #cbd5e1;
+        margin-bottom: 12px;
+        font-size: 0.98rem;
+    }
 
-        li {
-            margin-bottom: 8px;
-        }
+    ul {
+        list-style-type: none;
+        margin-left: 5px;
+        color: var(--text-muted);
+    }
 
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-        }
+    li {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        font-size: 0.96rem;
+        line-height: 1.55;
+    }
 
-        .skill-category {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            padding: 15px;
-            border-radius: 8px;
-        }
+    li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: var(--accent-color);
+        font-size: 1.2rem;
+        line-height: 1;
+        top: 2px;
+    }
 
-        .skill-category h4 {
-            color: var(--accent-color);
-            margin-bottom: 8px;
-        }
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 18px;
+    }
 
-        .badge-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
+    .skill-category {
+        background-color: var(--card-bg);
+        border: 1px solid var(--border-color);
+        padding: 18px;
+        border-radius: 8px;
+    }
 
-        .badge {
-            background: #090d16;
-            border: 1px solid var(--border-color);
-            padding: 4px 10px;
-            border-radius: 4px;
-            font-size: 0.85rem;
-            color: var(--text-main);
-        }
+    .skill-category h4 {
+        color: var(--accent-color);
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
 
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-            border-top: 1px solid var(--border-color);
-            margin-top: 40px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <!-- HEADER -->
-        <header>
-            <h1>Ahmed Emad Eldeen</h1>
-            <h2 class="title">Laravel Full Stack Developer</h2>
-            <div class="contact-links">
-                <span>📍 Cairo, Egypt</span>
-                <span>📞 +20 111 266 1530</span>
-                <a href="mailto:emada2826@gmail.com">✉️ emada2826@gmail.com</a>
-                <a href="https://www.linkedin.com/in/ahmed-emad-492a4a22b/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/AhmedEmad101" target="_blank">GitHub</a>
-            </div>
-        </header>
+    .badge-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
 
-        <!-- SUMMARY -->
-        <section>
-            <h3 class="section-title">Professional Summary</h3>
-            <p class="summary">
-                A hardworking Developer dedicated to optimizing SaaS platforms and tackling complex technical challenges. 
-                Having worked across diverse companies and mindsets, my ultimate goal is to leverage top-tier engineering 
-                expertise to build and scale my own SaaS products.
-            </p>
-        </section>
+    .badge {
+        background: #090d16;
+        border: 1px solid var(--border-color);
+        padding: 5px 12px;
+        border-radius: 4px;
+        font-size: 0.85rem;
+        color: var(--text-main);
+    }
 
-        <!-- SKILLS -->
-        <section>
-            <h3 class="section-title">Technical Skills</h3>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>Backend & Frameworks</h4>
-                    <div class="badge-list">
-                        <span class="badge">Laravel (MVC/API)</span>
-                        <span class="badge">Spring Boot</span>
-                        <span class="badge">ASP.NET</span>
-                        <span class="badge">Microservices</span>
-                        <span class="badge">PHP</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h4>Languages</h4>
-                    <div class="badge-list">
-                        <span class="badge">PHP</span>
-                        <span class="badge">Java</span>
-                        <span class="badge">Python</span>
-                        <span class="badge">C</span>
-                        <span class="badge">SQL</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h4>Tools & Infrastructure</h4>
-                    <div class="badge-list">
-                        <span class="badge">Docker</span>
-                        <span class="badge">Redis</span>
-                        <span class="badge">RabbitMQ</span>
-                        <span class="badge">Git</span>
-                        <span class="badge">Azure DevOps</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h4>Frontend</h4>
-                    <div class="badge-list">
-                        <span class="badge">React.js</span>
-                        <span class="badge">JavaScript</span>
-                        <span class="badge">HTML5</span>
-                        <span class="badge">CSS3</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+    .project-title {
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: var(--text-main);
+        margin-bottom: 6px;
+    }
 
-        <!-- EXPERIENCE -->
-        <section>
-            <h3 class="section-title">Work Experience</h3>
-            
-            <div class="card">
-                <div class="card-header">
-                    <span class="role">Backend Developer <span class="company">@ Beetleware</span></span>
-                    <span class="date-location">Feb 2026 - Present | Cairo, Egypt</span>
-                </div>
-                <ul>
-                    <li>Developed enterprise-level backend systems including Logistics platforms for KSA Ministry of Transport.</li>
-                    <li>Built a CEO Meeting Management System featuring Outlook Calendar synchronization and MS Graph API integration.</li>
-                    <li>Leveraged Anthropic AI workflows including Claude Code in Action, Claude API, and Agent Skills.</li>
-                    <li>Maintained multi-role HRMS with location tracking and business logic rules.</li>
-                    <li>Optimized Manager Bulk Attendance REST APIs, reducing endpoint complexity by 50%.</li>
-                </ul>
-            </div>
+    .project-desc {
+        color: var(--text-muted);
+        font-size: 0.96rem;
+    }
 
-            <div class="card">
-                <div class="card-header">
-                    <span class="role">Full Stack Developer <span class="company">@ Five Dimensions Company</span></span>
-                    <span class="date-location">Dec 2025 - Feb 2026 | Cairo, Egypt</span>
-                </div>
-                <ul>
-                    <li>Designed and maintained internal web platforms for workflow and admin control.</li>
-                    <li>Migrated legacy systems to scalable modern architectures.</li>
-                    <li>Developed e-learning platforms and recruitment job portals.</li>
-                </ul>
-            </div>
+    footer {
+        text-align: center;
+        padding: 25px 0;
+        color: var(--text-muted);
+        font-size: 0.9rem;
+        border-top: 1px solid var(--border-color);
+        margin-top: 50px;
+    }
+</style>
 
-            <div class="card">
-                <div class="card-header">
-                    <span class="role">Full Stack Developer <span class="company">@ Elma7al.com</span></span>
-                    <span class="date-location">Jan 2025 - Nov 2025 | Cairo, Egypt</span>
-                </div>
-                <ul>
-                    <li>Full-stack e-commerce development with third-party API integrations (Aramex, Fawry, Paymob).</li>
-                    <li>Enhanced website performance by 15% on Google PageSpeed Insights, achieving a 100% SEO score.</li>
-                    <li>Integrated Meta Conversion API, Google Analytics, and Google Merchant Center.</li>
-                </ul>
-            </div>
-        </section>
 
-        <!-- PROJECTS -->
-        <section>
-            <h3 class="section-title">Key Projects</h3>
-            
-            <div class="card">
-                <div class="card-header">
-                    <span class="role">Real Estate System (Graduation Project)</span>
-                </div>
-                <p class="summary">A full-featured property platform supporting buying, renting, filtering, and PayPal/Mailtrap integrations.</p>
-            </div>
+    <!-- PROFESSIONAL SUMMARY -->
+    <section>
+        <h3 class="section-title">Professional Summary</h3>
+        <p class="summary">
+            A hardworking Developer dedicated to optimizing SaaS platforms and tackling complex technical challenges. Having worked across diverse companies and mindsets, my ultimate goal is to leverage top-tier engineering expertise to build and scale my own SaaS products.
+        </p>
+    </section>
 
-            <div class="card">
-                <div class="card-header">
-                    <span class="role">Task Assigner Web App</span>
-                </div>
-                <p class="summary">Team and project management platform with productivity tracking and subscription tiers (Laravel + Blade).</p>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <span class="role">Smart Media API</span>
-                </div>
-                <p class="summary">Social media API platform implementing Action Design Pattern with React frontend.</p>
-            </div>
-        </section>
-
-        <!-- EDUCATION & CERTIFICATIONS -->
-        <section>
-            <h3 class="section-title">Education & Certifications</h3>
-            <div class="card">
-                <div class="card-header">
-                    <span class="role">B.S. Information Systems & Computer Science</span>
-                    <span class="date-location">Helwan University | Graduated 2023 (GPA: 3.04)</span>
-                </div>
-            </div>
-            <div class="card">
-                <div class="role" style="font-size: 1rem; margin-bottom: 10px;">Anthropic Certifications (2026)</div>
+    <!-- TECHNICAL SKILLS -->
+    <section>
+        <h3 class="section-title">Technical Skills</h3>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Frameworks & Backend</h4>
                 <div class="badge-list">
-                    <span class="badge">Claude Code in Action</span>
-                    <span class="badge">Claude with Anthropic API</span>
-                    <span class="badge">Introduction to Agent Skills</span>
-                    <span class="badge">Model Context Protocol (MCP)</span>
+                    <span class="badge">Laravel (MVC/API)</span>
+                    <span class="badge">ASP.NET</span>
+                    <span class="badge">Spring Boot</span>
+                    <span class="badge">Microservices</span>
                 </div>
             </div>
-        </section>
+            <div class="skill-category">
+                <h4>Languages</h4>
+                <div class="badge-list">
+                    <span class="badge">PHP</span>
+                    <span class="badge">C</span>
+                    <span class="badge">Java</span>
+                    <span class="badge">Python</span>
+                    <span class="badge">SQL</span>
+                    <span class="badge">OOP</span>
+                    <span class="badge">Data Structures</span>
+                    <span class="badge">Algorithms</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4>Front-end</h4>
+                <div class="badge-list">
+                    <span class="badge">HTML5</span>
+                    <span class="badge">CSS3</span>
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">React.js</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4>Tools & Infrastructure</h4>
+                <div class="badge-list">
+                    <span class="badge">RabbitMQ</span>
+                    <span class="badge">Redis</span>
+                    <span class="badge">Docker</span>
+                    <span class="badge">Git</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4>Management</h4>
+                <div class="badge-list">
+                    <span class="badge">Microsoft Azure DevOps</span>
+                    <span class="badge">Trello</span>
+                    <span class="badge">Click Up</span>
+                    <span class="badge">Zoho</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4>Languages Spoken</h4>
+                <div class="badge-list">
+                    <span class="badge">Arabic (Native)</span>
+                    <span class="badge">English (Fluent)</span>
+                    <span class="badge">German (Basic)</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <footer>
-            <p>© 2026 Ahmed Emad Eldeen. Built for GitHub Pages.</p>
-        </footer>
-    </div>
+    <!-- WORK EXPERIENCE -->
+    <section>
+        <h3 class="section-title">Work Experience</h3>
+        
+        <!-- Beetleware -->
+        <div class="card">
+            <div class="card-header">
+                <span class="role">Backend Developer <span class="company">@ Beetleware</span></span>
+                <span class="date-location">February 2026 - Present | Cairo, Egypt</span>
+            </div>
+            <p class="intro-text">
+                Developed and collaborated on multiple enterprise-level backend systems for software houses, including Logistics and Transport platforms utilized by the Ministry of Transport and Logistics in Saudi Arabia.
+            </p>
+            <p class="intro-text">
+                Designed and implemented a comprehensive CEO Meeting Management System featuring meeting approvals, Outlook Calendar synchronization, Microsoft Graph API integration, recurring meetings, email automation, and role-based workflows.
+            </p>
+            <ul>
+                <li>Built recurring meeting functionality supporting configurable recurrence rules, automatic meeting generation, Outlook event synchronization, approval lifecycle management, and notification workflows.</li>
+                <li>Integrated Microsoft Outlook Calendar APIs and webhooks to synchronize meeting creation, updates, attendee management, and calendar events across enterprise users.</li>
+                <li>Leveraged advanced AI engineering workflows by integrating knowledge from professional Anthropic certifications, including Claude Code in Action, Claude with the Anthropic API, Introduction to Agent Skills, and Introduction to Model Context Protocol (MCP).</li>
+                <li>Developed and maintained a robust, multi-role HRMS (Human Resource Management System) tailored for company and employee management, featuring location-based tracking, complex check-in/out scenarios, and strict business logic.</li>
+                <li>Designed and implemented critical reporting tools, including an "Attendance Out of Check-in Location" report and resolved a major missing data bug within the "Location Exception Requests" report.</li>
+                <li>Optimized the Manager Bulk Attendance feature by redesigning REST APIs, reducing backend endpoint complexity by 50%.</li>
+                <li>Built an application-wide "Force Update" toggle controlled through the Super Admin dashboard and synchronized with its corresponding API endpoint.</li>
+                <li>Resolved front-end layout and UI alignment discrepancies across platforms to ensure a seamless user experience.</li>
+            </ul>
+        </div>
+
+        <!-- Five Dimensions Company -->
+        <div class="card">
+            <div class="card-header">
+                <span class="role">Full Stack Developer <span class="company">@ Five Dimensions Company</span></span>
+                <span class="date-location">December 2025 - February 2026 | Cairo, Egypt</span>
+            </div>
+            <ul>
+                <li>Designing, developing, and maintaining organizational web systems for employees and administrative control. Building internal platforms to manage workflows, roles, permissions, and operational processes.</li>
+                <li>Migrating legacy systems to newer scalable architectures using modern technologies.</li>
+                <li>Developing and maintaining e-learning management systems (courses, roles, content delivery).</li>
+                <li>Building and enhancing jobs portal systems for recruitment and administration control.</li>
+                <li>Collaborating with cross-functional teams to deliver secure and maintainable solutions.</li>
+            </ul>
+        </div>
+
+        <!-- Elma7al.com -->
+        <div class="card">
+            <div class="card-header">
+                <span class="role">Full Stack Developer <span class="company">@ Elma7al.com</span></span>
+                <span class="date-location">January 2025 - November 2025 | Cairo, Egypt</span>
+            </div>
+            <ul>
+                <li>Full-stack e-commerce development and maintenance using Laravel.</li>
+                <li>Implementing new features, integrating third-party APIs (Aramex-Fawry Paymob Community sms), and fixing legacy bugs.</li>
+                <li>SEO and performance optimization for marketing campaigns.</li>
+                <li>Enhanced Elma7al website performance by 15% based on Google PageSpeed Insights, achieving 100% SEO score.</li>
+                <li>Replaced non-meaningful product listing page links and filters by implementing canonical URLs for parent products, sub-categories, and sub-sub-categories, resulting in a cleaner sitemap and improved search engine indexing.</li>
+                <li>Integrating with Meta Conversion API, Google Analytics, Google Merchant Center, Google Conversion API.</li>
+                <li>Building REST APIs for mobile application integration.</li>
+                <li>Deploying to staging and production environments.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section>
+        <h3 class="section-title">Projects</h3>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="project-title">Real Estate System (Graduation Project) - Full Stack Developer</span>
+                <span class="date-location">August 2019 - June 2023</span>
+            </div>
+            <p class="project-desc">
+                A full-featured property platform allowing users to buy, rent, and sell properties, various search and filters, integrations with PayPal, Mailtrap for email sending.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <span class="project-title">3arabeyety Web App - Full Stack Developer</span>
+            </div>
+            <p class="project-desc">
+                An e-commerce platform for publishing, searching, and trading vehicles with role-based user management (Laravel + blade mvc).
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <span class="project-title">Task Assigner Web App - Full Stack Developer</span>
+            </div>
+            <p class="project-desc">
+                A system for managing teams, projects, and task assignments with productivity tracking and payment integrations, multiple subscriptions tiers (Laravel + blade mvc).
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <span class="project-title">Smart Media - Backend Developer</span>
+            </div>
+            <p class="project-desc">
+                A social media API platform supporting posts, friends, chats, likes, and comments using Action Design Pattern (Laravel Api + React).
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <span class="project-title">Student Management System - Backend Developer</span>
+            </div>
+            <p class="project-desc">
+                A system for managing students, admin, courses, attendances, applied repository, strategy and action design patterns, the endpoints are exported as a postman json collection (Laravel Api).
+            </p>
+        </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS -->
+    <section>
+        <h3 class="section-title">Education & Certifications</h3>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="role">Bachelor of Information Systems and Computer Science</span>
+                <span class="date-location">Graduation Year: 2023 | GPA: 3.04</span>
+            </div>
+            <p class="intro-text">Faculty of Computer Science and Artificial Intelligence, Helwan University - Cairo, Egypt</p>
+        </div>
+
+        <div class="card">
+            <div class="role" style="font-size: 1.1rem; margin-bottom: 12px; color: var(--accent-color);">Certifications</div>
+            <div class="badge-list">
+                <span class="badge">Claude Code in Action - Anthropic (2026)</span>
+                <span class="badge">Claude with the Anthropic API - Anthropic (2026)</span>
+                <span class="badge">Introduction to Agent Skills - Anthropic (2026)</span>
+                <span class="badge">Introduction to Model Context Protocol (MCP) - Anthropic (2026)</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Ahmed Emad Eldeen Ibrahim. Hosted on GitHub Pages.</p>
+    </footer>
+</div>
+
 </body>
 </html>
